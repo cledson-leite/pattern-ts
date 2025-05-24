@@ -1,3 +1,9 @@
-const curso = "design pattern em TypeScript";
+import { IphoneSimpleFactory } from "./criacional/factory-method/Iphone-simple-factory"
 
-console.log(curso);
+console.log('### Ordering IPhone XSMax ###')
+let iphone = IphoneSimpleFactory.orderingIphone('XS', 'max')
+console.log(iphone)
+
+console.log('\n\n### Ordering IPhone 11 ###')
+iphone = IphoneSimpleFactory.orderingIphone('11', 'standard')
+console.log(iphone)
